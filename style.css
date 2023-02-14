@@ -3,7 +3,25 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-image: url(./images/body.jfif);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+}
 hr{
     border: 2px blue solid;
     opacity: 1;
+}
+.icono{
+        background-image: url(./images/icono.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+}
+.title{
+    color: wheat;
+}
+.title a{
+    color: wheat;
 }
