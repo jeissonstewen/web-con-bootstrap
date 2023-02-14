@@ -3,12 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+/* body{
     background-image: url(./images/body.jfif);
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         background-position: center;
-}
+} */
 hr{
     border: 2px blue solid;
     opacity: 1;
@@ -20,8 +20,19 @@ hr{
         background-position: center;
 }
 .title{
-    color: wheat;
+    color: white;
+    font-size: xx-large;
 }
-.title a{
-    color: wheat;
+.tel a{
+    color: white;
+    text-decoration: none;
+    font-size: xx-large;
+
+}
+.btn a{
+    color: white;
+    text-decoration: none;
+}
+.offcanvas-body{
+    heigh;
 }

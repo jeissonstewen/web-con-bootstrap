@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <header class="container-fluid p-2 h-100 bg-primary">
@@ -22,22 +22,19 @@
     </header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><i class="bi bi-house-up"></i></a>
+          <a class="navbar-brand" href="../index.html"><i class="bi bi-house-up"></i></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#somos">¿Quienes somos?</a>
-              </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Servicios
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="./pages/llegar.html">¿Como llegar?</a></li>
-                  <li><a class="dropdown-item" href="./pages/reservar.html">¿Como reservar?</a></li>
+                    <li><a class="dropdown-item" href="../pages/llegar.html">¿Como llegar?</a></li>
+                    <li><a class="dropdown-item" href="#">¿Como reservar?</a></li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -51,40 +48,14 @@
           </div>
         </div>
     </nav>
-    <div class=" row my-4 justify-content-center">
-        <div id="carouselExampleInterval" class="carousel slide col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="2000">
-                <img src="./images/slide1.jfif" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item" data-bs-interval="2000">
-                <img src="./images/slide2.jfif" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./images/slide3.jfif" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="./images/somos.jfif" class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
-    <a name="somos"></a>
+
     <div class="container hr">
         <hr class="">
     </div>
     <!-- quienes somos -->
     <main class="container">
         <div class="row ">
-            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div class="col-4">
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
                       <h2 class="accordion-header" id="headingOne">
@@ -165,69 +136,43 @@
                 </div>
                 
             </div>
-            <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+            <div class="col-8">
                 <div class="row col text-center">
                     <div class="col-12 p-3">
-                        ¿Quienes somos?
+                        <h3>
+                            ¿Cómo reservar?
+                        </h3>
                     </div>
-                    <div class="row col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                        <img src="./images/qsomos.jfif"></img>
+                    <div class="col-12 row">
+                        <img src="../images/reserva.jpg"></img>
                     </div>
-                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                      Emprendimiento familiar dedicado al turismo en el municipio de San Gil santander, ubicado en el km 8 vía San Gil-Charalá, 
-                      cuenta con excelentes pozos para baño, espacio para realizar asados, sancochos, venta de bebidas frías, calientes,
-                        pasabocas, helados, empanadas, obleas, sandwich's. Además, contamos con zona de camping y servicios de
-                        juegos autoctonos de la región(tejo, bolo criollo, minitejo).
+                    <div class="col-12">
+                        
+
+                        <p>Nuestro emprendimiento maneja reservas a través de nuestros canales de comunicación, como Instagram, WhatsApp, correo electrónico y llamadas telefónicas. O directamente en nuestro punto físico. </p>
+
+                        <p>Las reservas aplican para eventos de empresas o público general con una cantidad superior a 50 personas y/o reserva en el área de camping para familias o grupo de amigos. Esta es válida una vez se ha cancelado la mitad del valor total, el cual puede ser consultado en los siguientes medios: </p>
+                        <ul class="text-start">
+                            <li>
+                                Celular: (+57)3167606297  
+                            </li>
+                            <li>
+                                Correo electrónico: leopincris@hotmail
+                            </li>
+                            <li>
+                                Instagram: Balneario_LaPlaya
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
       </main>
-    <div class="container hr">
-        <hr class="">
-    </div>
-    <section class="container">
-        <div class="container row gap-2 d-flex justify-content-center">
-            <div class="card" style="width: 14rem;">
-                <img src="./images/asados.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Zona de paseo de olla</h5>
-                  <p class="card-text">Espacios dispuestos para la preparación de asados y/o sancochos, dotados con parrillas y techo.  </p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-              <div class="card" style="width: 14rem;">
-                <img src="./images/camping.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Zona de camping</h5>
-                  <p class="card-text">Sitio plano y amplio, en el cual se puede acampar comodamente, con un costo de COP-5000 por carpa.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-              <div class="card" style="width: 14rem;">
-                <img src="./images/juegos.jfif" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Juegos autóctonos</h5>
-                  <p class="card-text">Zona de juegos de bolo criollo, minitejo y tejo, prestadas con consumo obligatorio con un valor de COP 200 adicional
-                    en cada producto</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-              <div class="card" style="width: 14rem;">
-                <img src="./images/bebidas.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Area de alimentación</h5>
-                  <p class="card-text">Venta de bebidas frías, calientes, picadas, mecato, helados, obleas, empanadas al mejor precio y la mejor sazón</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-        </div>
-      </section>
-    <a name="contacto"></a>
+      <a name="contacto"></a>
       <div class="container hr">
           <hr class="">
       </div>
-      <section class="container">          
+      <footer class="container">          
         <form action="#">
           <div class="row text-center">
             <div>
@@ -271,19 +216,6 @@
             </div> 
           </div>                                
         </form>        
-      </section> 
-      <footer class="container footer text-center mt-5">
-        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Developed By</button>
-
-        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasBottomLabel"></h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body small text-center">
-            Desarollado por: © Jeisson Stewen 
-          </div>
-        </div>
-      </footer>       
+      </footer>        
 </body>
 </html>
