@@ -146,7 +146,7 @@
                     <div class="col-12 row">
                         <img src="../images/reserva.jpg"></img>
                     </div>
-                    <div class="col-12">
+                    <div class=" info col-12">
                         
 
                         <p>Nuestro emprendimiento maneja reservas a través de nuestros canales de comunicación, como Instagram, WhatsApp, correo electrónico y llamadas telefónicas. O directamente en nuestro punto físico. </p>
@@ -154,13 +154,13 @@
                         <p>Las reservas aplican para eventos de empresas o público general con una cantidad superior a 50 personas y/o reserva en el área de camping para familias o grupo de amigos. Esta es válida una vez se ha cancelado la mitad del valor total, el cual puede ser consultado en los siguientes medios: </p>
                         <ul class="text-start">
                             <li>
-                                Celular: (+57)3167606297  
+                              <i class="bi bi-telephone-forward-fill"></i> (+57)3167606297  
                             </li>
                             <li>
-                                Correo electrónico: leopincris@hotmail
+                              <i class="bi bi-envelope-fill"></i> leopincris@hotmail
                             </li>
                             <li>
-                                Instagram: Balneario_LaPlaya
+                              <i class="bi bi-instagram"></i> Balneario_LaPlaya
                             </li>
                         </ul>
                     </div>
@@ -172,7 +172,7 @@
       <div class="container hr">
           <hr class="">
       </div>
-      <footer class="container">          
+      <section class="container contacto p-3">          
         <form action="#">
           <div class="row text-center">
             <div>
@@ -201,12 +201,13 @@
                 <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
                   <div class="input-group mb-3">
                     <span class="input-group-text" id="basic-addon1">Telefono</span>
-                    <input type="text" class="form-control" placeholder="Telefono" aria-label="name" aria-describedby="basic-addon1">
+                    <input type="tel" class="form-control" placeholder="Telefono" aria-label="name" aria-describedby="basic-addon1">
                   </div>
                 </div>
-                <div class="">
-                  <div class="input-group mb-3">
-                    <textarea name="Mensaje" id="" cols="140" rows="3" placeholder="Mensaje"></textarea>
+                <div class="mb-3 col-12">
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea">Mensaje</label>
                   </div>
                 </div>
                 <div class="enviar">
@@ -216,6 +217,16 @@
             </div> 
           </div>                                
         </form>        
-      </footer>        
+      </section> 
+      <footer class="container footer text-center mt-5">
+        <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Developed By</button>
+
+        <div class="offcanvas offcanvas-bottom h-auto" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+          <div class="offcanvas-body small text-center">
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            Desarollado por: © <a href="https://github.com/jeissonstewen" target="_blank">Jeisson Stewen</a> 
+          </div>
+        </div>
+      </footer>       
 </body>
 </html>

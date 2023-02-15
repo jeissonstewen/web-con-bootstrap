@@ -11,13 +11,13 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header class="container-fluid p-2 h-100 bg-primary">
+    <header class="container-fluid baln p-2 h-100">
         <div class="row text-center d-flex align-items-center">
             <div class="icono p-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 row" >
               <figure></figure>
             </div>
-            <div class="title col-md-4 col-lg-4 col-xl-4 col-xxl-4">Balneario la playa</div>
-            <div class="tel col-md-4 col-lg-4 col-xl-4 col-xxl-4"><a href="tel: 3167606297"><i class="bi bi-telephone-outbound-fill"></i>-3167606297</a></div>
+            <div class="title col-md-4 col-lg-4 col-xl-4 col-xxl-4"><h1>BALNEARIO LA PLAYA</h1></div>
+            <div class="tel col-md-4 col-lg-4 col-xl-4 col-xxl-4"><a href="tel: 3167606297"><i class="bi bi-telephone-outbound-fill">-3167606297</i></a></div>
         </div>
     </header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
@@ -45,8 +45,8 @@
               </li>
             </ul>
             <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-primary" type="submit">Search</button>
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-primary" type="submit">Buscar</button>
             </form>
           </div>
         </div>
@@ -82,7 +82,7 @@
         <hr class="">
     </div>
     <!-- quienes somos -->
-    <main class="container">
+    <main class="container quienes p-3">
         <div class="row ">
             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <div class="accordion" id="accordionExample">
@@ -168,16 +168,18 @@
             <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
                 <div class="row col text-center">
                     <div class="col-12 p-3">
-                        ¿Quienes somos?
+                        <h3>¿Quienes somos?</h3>
                     </div>
                     <div class="row col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
                         <img src="./images/qsomos.jfif"></img>
                     </div>
-                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                      Emprendimiento familiar dedicado al turismo en el municipio de San Gil santander, ubicado en el km 8 vía San Gil-Charalá, 
+                    <div class="info col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                      <span>
+                        Emprendimiento familiar dedicado al turismo en el municipio de San Gil santander, ubicado en el km 8 vía San Gil-Charalá, 
                       cuenta con excelentes pozos para baño, espacio para realizar asados, sancochos, venta de bebidas frías, calientes,
                         pasabocas, helados, empanadas, obleas, sandwich's. Además, contamos con zona de camping y servicios de
                         juegos autoctonos de la región(tejo, bolo criollo, minitejo).
+                      </span>
                     </div>
                 </div>
             </div>
@@ -186,22 +188,70 @@
     <div class="container hr">
         <hr class="">
     </div>
-    <section class="container">
+    <section class="container cards p-3">
         <div class="container row gap-2 d-flex justify-content-center">
             <div class="card" style="width: 14rem;">
                 <img src="./images/asados.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Zona de paseo de olla</h5>
                   <p class="card-text">Espacios dispuestos para la preparación de asados y/o sancochos, dotados con parrillas y techo.  </p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <div class="text-center">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#paseo">
+                      Ver precios
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="paseo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Precios!</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            Aquí encontrarás el listado de productos/servicios con su respectivo valor
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="card" style="width: 14rem;">
                 <img src="./images/camping.png" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Zona de camping</h5>
-                  <p class="card-text">Sitio plano y amplio, en el cual se puede acampar comodamente, con un costo de COP-5000 por carpa.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <p class="card-text">
+                    Sitio plano y amplio, en el cual se puede acampar comodamente, con un costo de COP-5000 por carpa.
+                  </p>
+                  <div class="text-center">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#camping">
+                      Ver precios
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="camping" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Precios!</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            Aquí encontrarás el listado de productos con su respectivo valor
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>  
                 </div>
               </div>
               <div class="card" style="width: 14rem;">
@@ -210,7 +260,30 @@
                   <h5 class="card-title">Juegos autóctonos</h5>
                   <p class="card-text">Zona de juegos de bolo criollo, minitejo y tejo, prestadas con consumo obligatorio con un valor de COP 200 adicional
                     en cada producto</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <div class="text-center">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#juegos">
+                      Ver precios
+                    </button>
+  
+                    <!-- Modal -->
+                    <div class="modal fade" id="juegos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Precios!</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            Aquí encontrarás el listado de servicios con su respectivo valor
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>  
                 </div>
               </div>
               <div class="card" style="width: 14rem;">
@@ -218,7 +291,31 @@
                 <div class="card-body">
                   <h5 class="card-title">Area de alimentación</h5>
                   <p class="card-text">Venta de bebidas frías, calientes, picadas, mecato, helados, obleas, empanadas al mejor precio y la mejor sazón</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <!-- Button trigger modal -->
+                  <div class="text-center">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#alimentos">
+                      Ver precios
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="alimentos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Precios!</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            Aquí encontrarás el listado de productos con su respectivo valor
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
         </div>
@@ -227,7 +324,7 @@
       <div class="container hr">
           <hr class="">
       </div>
-      <section class="container">          
+      <section class="container contacto p-3">          
         <form action="#">
           <div class="row text-center">
             <div>
@@ -256,12 +353,13 @@
                 <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
                   <div class="input-group mb-3">
                     <span class="input-group-text" id="basic-addon1">Telefono</span>
-                    <input type="text" class="form-control" placeholder="Telefono" aria-label="name" aria-describedby="basic-addon1">
+                    <input type="tel" class="form-control" placeholder="Telefono" aria-label="name" aria-describedby="basic-addon1">
                   </div>
                 </div>
-                <div class="">
-                  <div class="input-group mb-3">
-                    <textarea name="Mensaje" id="" cols="140" rows="3" placeholder="Mensaje"></textarea>
+                <div class="mb-3 col-12">
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea">Mensaje</label>
                   </div>
                 </div>
                 <div class="enviar">
@@ -273,15 +371,12 @@
         </form>        
       </section> 
       <footer class="container footer text-center mt-5">
-        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Developed By</button>
+        <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Developed By</button>
 
-        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasBottomLabel"></h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
+        <div class="offcanvas offcanvas-bottom h-auto" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
           <div class="offcanvas-body small text-center">
-            Desarollado por: © Jeisson Stewen 
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            Desarollado por: © <a href="https://github.com/jeissonstewen" target="_blank">Jeisson Stewen</a> 
           </div>
         </div>
       </footer>       

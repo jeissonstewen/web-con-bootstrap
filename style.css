@@ -3,15 +3,30 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* body{
-    background-image: url(./images/body.jfif);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-} */
+body{
+  background-image: url(./images/fondo.jpg);
+  background-repeat: no-repeat;
+    background-size: cover;
+}
+.baln{
+    background-color: rgba(188, 209, 138, 0.644);
+}
+h1{
+    color: green;
+}
 hr{
     border: 2px blue solid;
     opacity: 1;
+}
+.quienes{
+    background-color: rgba(188, 209, 138, 0.397);
+}
+.cards{
+    background-color: rgba(188, 209, 138, 0.397);
+    
+}
+.contacto{
+    background-color: rgba(188, 209, 138, 0.397);
 }
 .icono{
         background-image: url(./images/icono.png);
@@ -33,6 +48,18 @@ hr{
     color: white;
     text-decoration: none;
 }
-.offcanvas-body{
-    heigh;
+.offcanvas-body a{
+    text-decoration: none;
+}
+.card-text{
+    text-align: justify;
+}
+.info{
+    text-align: justify;
+}
+.info ul{
+    list-style: none;
+}
+.accordion-body{
+    text-align: justify;
 }

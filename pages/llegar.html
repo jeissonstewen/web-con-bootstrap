@@ -141,10 +141,10 @@
                     <div class="col-12 p-3 text-wrap">
                         <h3>¿Como llegar?</h3>
                     </div>
-                    <div class="col-8 row">
+                    <div class="col-6 row">
                         <img src="../images/maps.jfif"></img>
                     </div>
-                    <div class="col-12">
+                    <div class="info col-4">
                         <p>Nuestro Balneario se encuentra ubicado en el municipio de San Gil - Santander. Para llegar a el lugar, se debe tomar la carretera pavimentada que conduce de San Gil a Charalá, hasta llegar a un punto conocido como Puente Mirandas, ubicado en el Km 8. Posteriormente, se toma un desvío a mano izquierda durante 1 km por vía destapada.</p>
 
                         <p>En este punto se encuentra  nuestro balnerario, en el cual podrás disfrutar de actividades ideadas para el esparcimiento, ocio y descanso en familia.</p>
@@ -159,7 +159,7 @@
       <div class="container hr">
           <hr class="">
       </div>
-      <footer class="container">          
+      <section class="container contacto p-3">          
         <form action="#">
           <div class="row text-center">
             <div>
@@ -188,12 +188,13 @@
                 <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12">
                   <div class="input-group mb-3">
                     <span class="input-group-text" id="basic-addon1">Telefono</span>
-                    <input type="text" class="form-control" placeholder="Telefono" aria-label="name" aria-describedby="basic-addon1">
+                    <input type="tel" class="form-control" placeholder="Telefono" aria-label="name" aria-describedby="basic-addon1">
                   </div>
                 </div>
-                <div class="">
-                  <div class="input-group mb-3">
-                    <textarea name="Mensaje" id="" cols="140" rows="3" placeholder="Mensaje"></textarea>
+                <div class="mb-3 col-12">
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                    <label for="floatingTextarea">Mensaje</label>
                   </div>
                 </div>
                 <div class="enviar">
@@ -203,6 +204,16 @@
             </div> 
           </div>                                
         </form>        
-      </footer>        
+      </section>
+      <footer class="container footer text-center mt-5">
+        <button class="btn btn-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Developed By</button>
+
+        <div class="offcanvas offcanvas-bottom h-auto" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+          <div class="offcanvas-body small text-center">
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            Desarollado por: © <a href="https://github.com/jeissonstewen" target="_blank">Jeisson Stewen</a> 
+          </div>
+        </div>
+      </footer>         
 </body>
 </html>
